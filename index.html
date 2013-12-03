@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Berrypalooza</title>
+  <style>
+    html, body {
+      margin:0;
+      padding:0;
+    }
+    body {
+      background:url("background.png");
+      font-family: sans-serif;
+      color:white;
+              text-shadow:
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+           1px 1px 0 #000;
+      background-position:-20px -20px;
+    }
+    section.main {
+      width:800px;
+      padding:30px 0;
+      margin:0 auto;
+    }
+    h1.header {
+      text-align: center;
+      font-weight:bold;
+      color:white;
+      font-family: sans-serif;
+      -webkit-transform:skewX(-10deg), rotate(10deg);
+      margin-bottom:100px;
+    }
+    nav.main {
+      /*background: rgba(255,255,255,0.4);*/
+      min-height: 100%;
+      text-align: center;
+    }
+    .item {
+      display: inline-block;
+      font-size: 30px;
+      margin:0 20px;
+      color:white;
+        text-shadow:
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+           1px 1px 0 #000;
+    }
+    .counter {
+      text-align: center;
+    }
+    a:link,a:visited {
+      color:inherit;
+      text-decoration: none;
+    }
+    p {
+      margin:0;
+      padding:0;
+    }
+  </style>
+  <script src="jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("body").mousemove(function(e) {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var x = e.clientX;
+        var y = e.clientY;
+        var newX = (x / w) * 40 - 40;
+        var newY = (y / h) * 40 - 40;
+        $("body").css("background-position", newX+"px "+newY+"px");
+      })
+    });
+  </script>
+</head>
+<body>
+  <section class="main">
+    <h1 class="header"><img src="header.png" alt="BerryPalooza"></h1>
+    <nav class="main">
+      <div class="item"><a href="">Music</a></div>
+      <div class="item"><a href="">Images</a></div>
+      <div class="item"><a href="">Tour Stops</a></div>
+    </nav>
+  </section>
+  <div class="counter">
+  <!-- Counter Code START --><p>Visits</p><img src="http://www.e-zeeinternet.com/count.php?page=1020606&style=default&nbdigits=6" alt="Free Web Counter" border="0" ><!-- Counter Code END -->
+  </div>
+</body>
+</html>
