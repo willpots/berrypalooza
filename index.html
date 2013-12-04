@@ -19,6 +19,11 @@
            1px 1px 0 #000;
       background-position:-20px -20px;
     }
+    div {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
     section.main {
       width:800px;
       padding:30px 0;
@@ -32,9 +37,11 @@
       -webkit-transform:skewX(-10deg), rotate(10deg);
       margin-bottom:100px;
     }
+    section {
+      min-height: 100%;
+    }
     nav.main {
       /*background: rgba(255,255,255,0.4);*/
-      min-height: 100%;
       text-align: center;
     }
     .item {
@@ -68,8 +75,8 @@
         var h = window.innerHeight;
         var x = e.clientX;
         var y = e.clientY;
-        var newX = (x / w) * 40 - 40;
-        var newY = (y / h) * 40 - 40;
+        var newX = (1 - x / w) * 40 - 40;
+        var newY = (1 - y / h) * 40 - 40;
         $("body").css("background-position", newX+"px "+newY+"px");
       })
     });
@@ -83,6 +90,9 @@
       <div class="item"><a href="">Images</a></div>
       <div class="item"><a href="">Tour Stops</a></div>
     </nav>
+  </section>
+  <section class="music">
+    
   </section>
   <div class="counter">
   <!-- Counter Code START --><p>Visits</p><img src="http://www.e-zeeinternet.com/count.php?page=1020606&style=default&nbdigits=6" alt="Free Web Counter" border="0" ><!-- Counter Code END -->
