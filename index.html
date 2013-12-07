@@ -69,13 +69,27 @@
       padding:0;
     }
     section {
+      text-align: center;
       min-height: 100%;
     }
     .sub-header {
       text-align: center;
     }
+    .mejs-container {
+      display:inline-block;
+    }
+    .music-container {
+      margin:3px 0;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
   </style>
   <script src="jquery.js"></script>
+  <script src="build/mediaelement-and-player.min.js"></script>
   <script>
     $(document).ready(function() {
       $("body").mousemove(function(e) {
@@ -89,6 +103,7 @@
       })
     });
   </script>
+  <link rel="stylesheet" href="build/mediaelementplayer.min.css" />
 </head>
 <body>
   <section class="main">
@@ -102,14 +117,213 @@
   <section class="music">
     <h2 class="sub-header">Music</h2>
     <h3>BabyBerry</h3>
+    <p class="music-container">
+      <audio src="music/babyberry/01 Shelter From the Storm.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/02 I Try.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/03 If You Leave.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/04 Good Shepard (Remastered 2004).m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/05 No Return.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/06 Badge.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/07 Sugar Mountain.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/08 You're No Good.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/09 Hello, It's Me.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/10 Too Late To Turn Back Now.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/11 Daylight.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/11 The Wind Cries Mary.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/12 Perfect Blue Buildings.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/13 Go Your Own Way.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/15 Sensitive Kind.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/16 Get It On.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/17 Real Man.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/18 For You Blue.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry/19 In My Life (Rubber Soul).m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry/20 Singing In My Ship.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
     <h3>BabyBerry 2</h3>
+    <p class="music-container">
+      <audio src="music/babyberry2/01 Walk On By.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/02 Leaving On A Jet Plane.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/03 Me and Bobby McGee.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/04 Do You Believe in Magic.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/05 Turn on Your Love Light.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/06 Blue Sky.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/07 Station Man.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/08 Let It Be.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/09 If Not For You.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/10 This is the Day.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/11 Daylight.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/12 After the Gold Rush.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/13 Promises.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/14 Crazy for this Girl.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/15 Riders on the Storm.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/16 Play With Fire.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/17 Only in My Dreams.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/18 Sitting in Limbo.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/19 After Midnight.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/babyberry2/20 Whenever God Shines His Light.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/babyberry2/21 Early in the Morning.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
     <h3>BlackBerry</h3>
+    <p class="music-container">
+      <audio src="music/blackberry/01 Here Comes The Sun.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/02 Real Man.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/03 Beautiful Day.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/04 If Not For You.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/05 Where I Go.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/06 Mr. Big Stuff.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/07 Golddigger.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/08 Rome Wasn't Built In A Day.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/09 Borderline.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/10 Thank You.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/11 Babylon.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/12 Put A Little Love In Your Heart.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/13 Sweet Jane.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/14 Rudie Can't Fail.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/15 Hunter S. Thomson Vor Der Kamera.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/16 Butterfly (Come My Lady).m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/17 Unbelievable.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/18 What's Up.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/19 The Freshmen.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/blackberry/20 Riding With Private Malone.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/blackberry/21 America the Beautiful.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
     <h3>JuneBerry</h3>
+    <p class="music-container">
+      <audio src="music/juneberry/01 Babylon.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/02 Anniversary Song.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/03 Never the Same.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/04 Come to My Window.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/05 Romeo and Juliet.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/06 Rome Wasn't Built in A Day.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/07 69 Annee Erotique.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/08 Nothing Compares To You.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/09 Please Forgive Me.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/10 The Freshmen.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/11 Satellite.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/12 Golddigger.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/13 Two Princes.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/14 Butterfly (Come My Lady).m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/15 Woke Up This Morning.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/juneberry/16 The Emperor's New Clothes.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/juneberry/17 Garlands.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
     <h3>MiddleBerry</h3>
-
+    <p class="music-container">
+      <audio src="music/middleberry/01 If You See Her Say Hello.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/02 They'll Be Some Changes Made.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/03 Hey Joe.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/04 Tangled Up in Blue.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/05 Wind Cries Mary.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/06 What It's Worth.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/07 Shelter From the Storm.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/08 Good Sheperd.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/09 Stage Fright.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/10 Little Wing.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/12 Black Water.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/13 Little Martha.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/14 Embryonic Journey.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/15 I Never Loved a Man Like You.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/16 I Know You Rider.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/17 The Weight.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
+    <p class="music-container">
+      <audio src="music/middleberry/18 Mother and Child Reunion.m4a" type="audio/mp4" controls="controls"></audio>
+      <audio src="music/middleberry/19 Me and My Uncle.m4a" type="audio/mp4" controls="controls"></audio>
+    </p>
   </section>
   <div class="counter">
   <!-- Counter Code START --><p>Visits</p><img src="http://www.e-zeeinternet.com/count.php?page=1020606&style=default&nbdigits=6" alt="Free Web Counter" border="0" ><!-- Counter Code END -->
   </div>
+<script>
+$('audio,video').mediaelementplayer();
+</script>
 </body>
 </html>
