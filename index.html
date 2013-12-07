@@ -7,9 +7,11 @@
     html, body {
       margin:0;
       padding:0;
+      height:100%;
     }
     body {
       background:url("background.png");
+      background-attachment:fixed;
       font-family: sans-serif;
       color:white;
               text-shadow:
@@ -66,6 +68,12 @@
       margin:0;
       padding:0;
     }
+    section {
+      min-height: 100%;
+    }
+    .sub-header {
+      text-align: center;
+    }
   </style>
   <script src="jquery.js"></script>
   <script>
@@ -75,8 +83,8 @@
         var h = window.innerHeight;
         var x = e.clientX;
         var y = e.clientY;
-        var newX = (1 - x / w) * 40 - 40;
-        var newY = (1 - y / h) * 40 - 40;
+        var newX = parseInt((1 - x / w) * 40 - 40);
+        var newY = parseInt((1 - y / h) * 40 - 40);
         $("body").css("background-position", newX+"px "+newY+"px");
       })
     });
@@ -92,7 +100,13 @@
     </nav>
   </section>
   <section class="music">
-    
+    <h2 class="sub-header">Music</h2>
+    <h3>BabyBerry</h3>
+    <h3>BabyBerry 2</h3>
+    <h3>BlackBerry</h3>
+    <h3>JuneBerry</h3>
+    <h3>MiddleBerry</h3>
+
   </section>
   <div class="counter">
   <!-- Counter Code START --><p>Visits</p><img src="http://www.e-zeeinternet.com/count.php?page=1020606&style=default&nbdigits=6" alt="Free Web Counter" border="0" ><!-- Counter Code END -->
