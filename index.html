@@ -115,13 +115,14 @@
   <section class="main">
     <h1 class="header"><img src="header.png" alt="BerryPalooza"></h1>
     <h2 class="subtitle"> - World Tour - </h2>
-    <nav class="main">
-      <div class="item"><a href="">Music</a></div>
-      <div class="item"><a href="">Images</a></div>
-      <div class="item"><a href="">Tour Stops</a></div>
+    <nav id="main" class="main">
+      <div class="item"><a href="#music">Music</a></div>
+      <div class="item"><a href="#comment">Leave a Comment</a></div>
+      <!-- <div class="item"><a href="">Images</a></div> -->
+      <!-- <div class="item"><a href="">Tour Stops</a></div> -->
     </nav>
   </section>
-  <section class="music">
+  <section id="music" class="music">
     <h2 class="sub-header">Music</h2>
     <h3>BabyBerry</h3>
     <p class="music-container">
@@ -326,6 +327,7 @@
       <audio src="music/middleberry/19 Me and My Uncle.m4a" type="audio/mp4" controls="controls"></audio>
     </p>
   </section>
+  <section id="comment">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -343,7 +345,7 @@
   <div class="counter">
   <p>Visits</p><img src="http://www.e-zeeinternet.com/count.php?page=1020606&style=default&nbdigits=6" alt="Free Web Counter" border="0" >
   </div>
-    
+</section> 
 <script>
 $('audio,video').mediaelementplayer();
 </script>
